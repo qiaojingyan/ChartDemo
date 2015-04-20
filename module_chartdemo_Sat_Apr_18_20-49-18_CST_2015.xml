@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_chartdemo" default="compile.module.chartdemo">
+  <dirname property="module.chartdemo.basedir" file="${ant.file.module_chartdemo}"/>
+  
+  <property name="module.jdk.home.chartdemo" value="${jdk.home.android_api_21_platform}"/>
+  <property name="module.jdk.bin.chartdemo" value="${jdk.bin.android_api_21_platform}"/>
+  <property name="module.jdk.classpath.chartdemo" value="jdk.classpath.android_api_21_platform"/>
+  
+  <property name="compiler.args.chartdemo" value="-encoding UTF-8 -source 1.6 -target 1.7 ${compiler.args}"/>
+  
+  <property name="chartdemo.output.dir" value="${module.chartdemo.basedir}/bin/classes"/>
+  <property name="chartdemo.testoutput.dir" value="${module.chartdemo.basedir}/bin/classes"/>
+  
+  <path id="chartdemo.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="chartdemo.module.production.classpath">
+    <path refid="${module.jdk.classpath.chartdemo}"/>
+  </path>
+  
+  <path id="chartdemo.runtime.production.module.classpath">
+    <pathelement location="${chartdemo.output.dir}"/>
+  </path>
+  
+  <path id="chartdemo.module.classpath">
+    <path refid="${module.jdk.classpath.chartdemo}"/>
+    <pathelement location="${chartdemo.output.dir}"/>
+  </path>
+  
+  <path id="chartdemo.runtime.module.classpath">
+    <pathelement location="${chartdemo.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.chartdemo">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.chartdemo">
+    <patternset refid="excluded.from.module.chartdemo"/>
+  </patternset>
+  
+  <path id="chartdemo.module.sourcepath">
+    <dirset dir="${module.chartdemo.basedir}">
+      <include name="src"/>
+      <include name="gen"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.chartdemo" depends="compile.module.chartdemo.production,compile.module.chartdemo.tests" description="Compile module ChartDemo"/>
+  
+  <target name="compile.module.chartdemo.production" depends="register.custom.compilers" description="Compile module ChartDemo; production classes">
+    <mkdir dir="${chartdemo.output.dir}"/>
+    <javac2 destdir="${chartdemo.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.chartdemo}/javac">
+      <compilerarg line="${compiler.args.chartdemo}"/>
+      <bootclasspath refid="chartdemo.module.bootclasspath"/>
+      <classpath refid="chartdemo.module.production.classpath"/>
+      <src refid="chartdemo.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.chartdemo"/>
+    </javac2>
+    
+    <copy todir="${chartdemo.output.dir}">
+      <fileset dir="${module.chartdemo.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.chartdemo.basedir}/gen">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.chartdemo.tests" depends="register.custom.compilers,compile.module.chartdemo.production" description="compile module ChartDemo; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.chartdemo" description="cleanup module">
+    <delete dir="${chartdemo.output.dir}"/>
+    <delete dir="${chartdemo.testoutput.dir}"/>
+  </target>
+</project>

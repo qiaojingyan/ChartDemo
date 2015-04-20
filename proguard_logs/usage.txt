@@ -1,0 +1,16 @@
+com.qjy.demos.chart.BuildConfig
+com.qjy.demos.chart.R
+com.qjy.demos.chart.R$attr
+com.qjy.demos.chart.R$dimen
+com.qjy.demos.chart.R$drawable
+com.qjy.demos.chart.R$id
+com.qjy.demos.chart.R$layout
+com.qjy.demos.chart.R$menu
+com.qjy.demos.chart.R$string
+com.qjy.demos.chart.R$style
+com.qjy.demos.chart.adapter.MyChartAdapter$ViewHolder2
+com.qjy.demos.chart.bean.ChartMessage:
+    private java.lang.String icon
+    35:35:public java.lang.String getTo()
+    43:43:public java.lang.String getIcon()
+    47:48:public void setIcon(java.lang.String)

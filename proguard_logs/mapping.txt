@@ -1,0 +1,91 @@
+com.qjy.demos.chart.MainActivity -> com.qjy.demos.chart.MainActivity:
+    com.qjy.demos.chart.service.MyServer myServer -> b
+    android.content.ServiceConnection conn -> c
+    java.util.List messages -> d
+    com.qjy.demos.chart.adapter.MyChartAdapter adapter -> e
+    java.util.List fileNames -> a
+    android.content.res.AssetManager manager -> f
+    android.app.AlertDialog dialog -> g
+    android.widget.EditText edt_info -> h
+    void onCreate(android.os.Bundle) -> onCreate
+    void initMyMessage(java.lang.String) -> a
+    void initMessage(java.lang.String) -> b
+    void initList(com.qjy.demos.chart.bean.ChartMessage) -> a
+    void btnAdd(android.view.View) -> btnAdd
+    void initEdt(android.text.SpannableStringBuilder) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    void onDestroy() -> onDestroy
+    com.qjy.demos.chart.service.MyServer access$002(com.qjy.demos.chart.MainActivity,com.qjy.demos.chart.service.MyServer) -> a
+    com.qjy.demos.chart.service.MyServer access$000(com.qjy.demos.chart.MainActivity) -> a
+    android.widget.EditText access$100(com.qjy.demos.chart.MainActivity) -> b
+    void access$200(com.qjy.demos.chart.MainActivity,java.lang.String) -> a
+    void access$300(com.qjy.demos.chart.MainActivity,java.lang.String) -> b
+    void access$400(com.qjy.demos.chart.MainActivity,android.text.SpannableStringBuilder) -> a
+    android.app.AlertDialog access$500(com.qjy.demos.chart.MainActivity) -> c
+com.qjy.demos.chart.MainActivity$1 -> com.qjy.demos.chart.a:
+    com.qjy.demos.chart.MainActivity this$0 -> a
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+com.qjy.demos.chart.MainActivity$2 -> com.qjy.demos.chart.b:
+    com.qjy.demos.chart.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.qjy.demos.chart.MainActivity$3 -> com.qjy.demos.chart.c:
+    com.qjy.demos.chart.MainActivity this$0 -> a
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+com.qjy.demos.chart.MainActivity$4 -> com.qjy.demos.chart.d:
+    com.qjy.demos.chart.MainActivity this$0 -> a
+    void getPosition(int) -> a
+com.qjy.demos.chart.adapter.MyChartAdapter -> com.qjy.demos.chart.a.a:
+    java.util.List messages -> a
+    android.content.Context context -> b
+    android.view.LayoutInflater inflater -> c
+    java.util.List fileNames -> d
+    android.content.res.AssetManager assets -> e
+    int getViewTypeCount() -> getViewTypeCount
+    int getItemViewType(int) -> getItemViewType
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.qjy.demos.chart.adapter.MyChartAdapter$ViewHolder1 -> com.qjy.demos.chart.a.b:
+    android.widget.ImageView img_icon -> a
+    android.widget.TextView txt_content -> b
+    android.widget.TextView txt_time -> c
+    com.qjy.demos.chart.adapter.MyChartAdapter this$0 -> d
+com.qjy.demos.chart.adapter.MyImageAdapter -> com.qjy.demos.chart.a.c:
+    java.util.List list -> a
+    android.content.Context context -> b
+    android.view.LayoutInflater inflater -> c
+    com.qjy.demos.chart.adapter.MyImageAdapter$onImageButtonClickListener listener -> d
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    com.qjy.demos.chart.adapter.MyImageAdapter$onImageButtonClickListener access$000(com.qjy.demos.chart.adapter.MyImageAdapter) -> a
+com.qjy.demos.chart.adapter.MyImageAdapter$1 -> com.qjy.demos.chart.a.d:
+    int val$i -> a
+    com.qjy.demos.chart.adapter.MyImageAdapter this$0 -> b
+    void onClick(android.view.View) -> onClick
+com.qjy.demos.chart.adapter.MyImageAdapter$onImageButtonClickListener -> com.qjy.demos.chart.a.e:
+    void getPosition(int) -> a
+com.qjy.demos.chart.bean.ChartMessage -> com.qjy.demos.chart.b.a:
+    java.lang.String content -> a
+    long time -> b
+    java.lang.String from -> c
+    java.lang.String to -> d
+    java.lang.String getContent() -> a
+    void setContent(java.lang.String) -> a
+    long getTime() -> b
+    void setTime(long) -> a
+    java.lang.String getFrom() -> c
+    void setFrom(java.lang.String) -> b
+    void setTo(java.lang.String) -> c
+com.qjy.demos.chart.service.MyServer -> com.qjy.demos.chart.service.MyServer:
+    void onCreate() -> onCreate
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    java.lang.String getesult(java.lang.String) -> a
+com.qjy.demos.chart.service.MyServer$MyBinder -> com.qjy.demos.chart.service.a:
+    com.qjy.demos.chart.service.MyServer this$0 -> a
+    com.qjy.demos.chart.service.MyServer getService() -> a

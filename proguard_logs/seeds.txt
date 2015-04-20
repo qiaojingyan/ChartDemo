@@ -1,0 +1,36 @@
+com.qjy.demos.chart.MainActivity
+com.qjy.demos.chart.MainActivity: MainActivity()
+com.qjy.demos.chart.MainActivity: void btnAdd(android.view.View)
+com.qjy.demos.chart.R$dimen: int activity_horizontal_margin
+com.qjy.demos.chart.R$dimen: int activity_vertical_margin
+com.qjy.demos.chart.R$drawable: int cat
+com.qjy.demos.chart.R$drawable: int edt_bg
+com.qjy.demos.chart.R$drawable: int ic_launcher
+com.qjy.demos.chart.R$drawable: int left
+com.qjy.demos.chart.R$drawable: int right
+com.qjy.demos.chart.R$drawable: int rightt
+com.qjy.demos.chart.R$id: int action_settings
+com.qjy.demos.chart.R$id: int btn_send
+com.qjy.demos.chart.R$id: int edt_info
+com.qjy.demos.chart.R$id: int gridView_dialog
+com.qjy.demos.chart.R$id: int img_lefticon
+com.qjy.demos.chart.R$id: int img_righticon
+com.qjy.demos.chart.R$id: int imgbtn_expression
+com.qjy.demos.chart.R$id: int list_main
+com.qjy.demos.chart.R$id: int txt_content
+com.qjy.demos.chart.R$id: int txt_right_content
+com.qjy.demos.chart.R$id: int txt_right_time
+com.qjy.demos.chart.R$id: int txt_time
+com.qjy.demos.chart.R$layout: int activity_main
+com.qjy.demos.chart.R$layout: int dialog_addimg
+com.qjy.demos.chart.R$layout: int item_gridview
+com.qjy.demos.chart.R$layout: int item_left
+com.qjy.demos.chart.R$layout: int item_right
+com.qjy.demos.chart.R$menu: int main
+com.qjy.demos.chart.R$string: int action_settings
+com.qjy.demos.chart.R$string: int app_name
+com.qjy.demos.chart.R$string: int hello_world
+com.qjy.demos.chart.R$style: int AppBaseTheme
+com.qjy.demos.chart.R$style: int AppTheme
+com.qjy.demos.chart.service.MyServer
+com.qjy.demos.chart.service.MyServer: MyServer()
